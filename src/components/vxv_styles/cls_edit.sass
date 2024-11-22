@@ -1,0 +1,34 @@
+.edit_true, .edit_false
+  height: 100%
+  width: 100%
+
+.edit_false[hover_field]
+  background-color: red
+  &:hover
+    color: $blue-grey-5
+  &::before, &::after
+    // content: ''
+    content: attr(text)
+
+  &::before
+    visibility: hidden
+
+  &::after
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0    
+    display: flex
+    justify-content: center
+    align-items: center 
+    transition: 0.3s
+    color: black
+  
+  &:hover::after
+    // color: white
+    justify-content: center
+    position: absolute
+    content: attr(hover_field)
+  
+

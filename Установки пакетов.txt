@@ -1,0 +1,17 @@
+:: reestr_frontend
+npm init quasar
+
+Установка из файла package.json
+npm install
+
+Установка из файла package-lock.json 
+npm ci
+
+Иконки:
+npm install @mdi/js @jamescoyle/vue-icon
+
+@REM call npm i -g @quasar/cli
+@REM call "%cd%\reestr_frontend"
+@REM call npm add vuex@next --save
+@REM call npm i axios
+
